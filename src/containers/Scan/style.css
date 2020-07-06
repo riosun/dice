@@ -1,0 +1,201 @@
+@media (max-width: 991px) {
+  #scan-overview{padding: 0px 15px}
+  #scan-title{width: 100%;height: 120px;margin-top: 30px; border-color: white; border: 1px solid #8C8F8F;}
+  #scan-title td{text-align: center;}
+  #personalInfo{margin-top: 20px;padding: 0px 0px}
+  #scan-content{padding-left: 5px;padding-bottom: 50px;}
+  #resultTable td {height: 30px;line-height: 30px;cursor: pointer;font-size: 11px;}
+  #resultTable th {height: 40px;line-height: 40px;cursor: pointer;padding: 0px 5px;text-align: center;font-size: 11px;}
+  #resultTable th > p {
+    margin: 0 0px;
+    color: #BBBBBB;
+    font-size: 8px!important;;
+  }
+
+  #resultTable td > p{
+    margin: 0 0px;
+    color: #868989;
+  }
+}
+
+@media (min-width: 992px){
+  #scan-overview{padding: 0px 75px}
+  #scan-title{width: 100%;height: 120px;margin-top: 30px; border-color: white; border: 1px solid #8C8F8F;border-radius: 2px;border-collapse :separate}
+  #scan-title td{text-align: center;}
+  #personalInfo{margin-top: 20px;padding: 0px 60px}
+  #scan-content{padding-left: 45px;padding-bottom: 50px;}
+  #resultTable td {height: 50px;line-height: 50px;cursor: pointer;font-size: 14px;}
+  #resultTable th {height: 70px;line-height: 60px;cursor: pointer;padding: 0px 5px;text-align: center;font-size: 13px;}
+  #resultTable th > p {
+    margin: 0 0px;
+    color: #BBBBBB;
+  }
+
+  #resultTable td {
+    margin: 0 0px;
+    color: #868989;
+  }
+
+  #avatar-modal-content {
+    width: 740px;
+  }
+}
+
+
+.my-btn-lable{width: 20%}
+.my-btn-group-search{width: 80%;display: inline-block;}
+
+.my-btn p{
+  color : rgb(187,187,187)!important;
+  font-size: 16px;
+}
+
+.my-btn span{
+  color : rgb(187,187,187)!important
+}
+
+.resultDetail {
+  text-align: left;
+  font-size: 14px;
+}
+
+
+.pageNation{
+  clear: both;
+}
+
+.scan-page-div {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-right: 18px;
+  text-align:  right;
+  user-select: none;
+}
+
+
+.scan-search-detail p{
+  margin: 1px
+}
+.scan-page-list {
+  background-color: #131616;
+  cursor: pointer;
+  border: 1px solid #4F5757;
+  width: 36px;
+  height: 36px;
+  line-height: 33px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 3px;
+}
+
+.scan-page-list.active{
+  background-color: #818384;
+  color: #081112
+}
+
+.scan-page-pageTotal {
+  background-color: #131616;
+  cursor: pointer;
+  border: 1px solid #4F5757;
+  padding: 0px 5px;
+  height: 36px;
+  line-height: 31px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+
+.my-table-striped tr{
+  border: none;
+  height: 45px;
+  text-align:
+}
+
+.tback{background-color: #131C1D; padding: 0px;margin: 0px 15px}
+
+.my-table-striped > tbody:nth-child(even) {
+    background-color:#081112;
+}
+
+.my-table-hover > tbody > tr:hover {
+  background-color:rgb(54,49,49);
+}
+
+.my-table-striped > tbody > tr > td {
+  padding: 0px 5px;
+}
+
+.self-dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    min-width: 160px;
+    margin: 4px 0 0;
+    list-style: none;
+    border-radius: 4px;
+    width: 100%;
+    background: #1D2323
+  }
+
+  .self-dropdown-menu > li{
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .self-dropdown-menu > li:hover{
+    background:rgb(56,68,68)
+  }
+
+  .open > .self-dropdown-menu {
+    display: block;
+  }
+  .open > a {
+    outline: 0;
+  }
+  .self-dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  .self-dropdown-menu-left {
+    right: auto;
+    left: 0;
+  }
+  .dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+  }
+  .dropdown-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990;
+  }
+  .pull-right > .self-dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  .dropup .caret,
+  .navbar-fixed-bottom .dropdown .caret {
+    scan-content: "";
+    border-top: 0;
+    border-bottom: 4px solid;
+  }
+  .dropup .self-dropdown-menu,
+  .navbar-fixed-bottom .dropdown .self-dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+  }
+
+  #select1{outline: none}
+  #select2{outline: none}

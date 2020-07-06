@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta
+      name="description"
+      content="TRONbet is revolutionizing the gaming industry using the TRON blockchain.  We offer instant play, provably-fair, no transaction fees…"
+    />
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="./images/favicon.ico" />
+    <title>WINk</title>
+    <style media="screen">
+      @font-face {
+        font-family: 'roboto';
+        src: url('./images/Roboto-Regular.ttf');
+      }
+      .datouwang4 {
+        margin-top: 0px !important;
+      }
+      #loading {
+        background: #011d1f;
+        height: 100%;
+        padding-top: 20%;
+        position: fixed;
+        width: 100%;
+        margin-right: 20px;
+        z-index: -1;
+      }
+      #winbox {
+        text-align: center;
+      }
+      #root {
+        opacity: 0;
+      }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+    <link href="https://at.alicdn.com/t/font_960954_ax3buzm58yk.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./js/loading.css" />
+    <script type="text/javascript">
+      document.domain = '3.15.85.91'
+    </script>
+  </head>
+  <body style="background:#010C0E">
+    <div id="loading">
+      <div class="datouwang4">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+
+      <!-- <div id="winbox">
+        <img src="./images/winxg.gif" alt="">
+      </div> -->
+    </div>
+
+    <div id="root"></div>
+
+    <audio src="./mp3/win.mp3" id="winMp3" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/lose.mp3" id="loseMp3" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/ring.mp3" id="ringMp3" class="sound" controls="controls" hidden="true"></audio>
+
+    <audio src="./mp3/boom.mp3" id="boom" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/moon1.mp3" id="moon1" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/moon2.mp3" id="moon2" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/moon3.mp3" id="moon3" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/moon4.mp3" id="moon4" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/moon5.mp3" id="moon5" class="sound" controls="controls" hidden="true"></audio>
+    <audio src="./mp3/moon6.mp3" id="moon6" class="sound" controls="controls" hidden="true"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="./js/slim.scroll.js" charset="utf-8"></script>
+    <script src="./js/clipboard.min.js" charset="utf-8"></script>
+    <script src="./js/jquery.rotate.js" charset="utf-8"></script>
+    <script src="./js/jquery.easing.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      window.winTeam = -1
+
+      HTMLAudioElement.prototype.stop = function() {
+        this.pause()
+        this.currentTime = 0.0
+      }
+
+      function noticeUp(obj, top, time) {
+        $(obj).unbind('animate')
+        $(obj).animate(
+          {
+            marginTop: top,
+          },
+          time,
+          function() {
+            $(obj)
+              .css({ marginTop: '0' })
+              .find(':first')
+              .appendTo(this)
+          }
+        )
+      }
+
+      var oldTitle = null
+      $(window).bind('mouseover mouseout mousemove', function(event) {
+        var left = event.pageX,
+          top = event.pageY
+        var ele = event.target
+        var title = ele.title
+
+        if (screen.width < 991) return
+
+        var type = event.originalEvent.type
+        if (type == 'mouseover') {
+          oldTitle = title
+          ele.title = ''
+          if (title != '' && title != undefined) {
+            var showEle = $('<div></div>', { class: 'showTitleBox' })
+              .css({
+                position: 'absolute',
+                zIndex: 10000,
+                top: top + 10,
+                left: left,
+                borderRadius: '5px',
+                maxWidth: '300px',
+                background: 'rgba(0,0,0,0.7)',
+                color: '#fff',
+                padding: '10px',
+              })
+              .html(title)
+            showEle.appendTo('body')
+          } else {
+            $('.showTitleBox').css('background', 'rgba(0,0,0,0)')
+          }
+
+          var maximgSrc = $(ele).data('maximg')
+          var maximgSrcUrl = $(ele).attr('src')
+
+          if (maximgSrc != undefined) {
+            var imgBox = $('<img></img>', { class: 'showImgBox' })
+              .css({
+                position: 'absolute',
+                zIndex: 10000,
+                top: top + 10,
+                left: left,
+              })
+              .attr('src', maximgSrcUrl)
+            imgBox.appendTo('body')
+          }
+        } else if (type == 'mouseout') {
+          ele.title = oldTitle
+          $('.showTitleBox, .showImgBox').remove()
+        } else if (type == 'mousemove') {
+          $('.showTitleBox').css({
+            top: top + 10,
+            left: left,
+          })
+
+          $('.showImgBox').css({
+            top: top + 10,
+            left: left,
+          })
+        }
+      })
+    </script>
+    <script src="./js/common1.js" charset="utf-8"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
+    <script src="./js/rectangleEmitter.js"></script>
+    <script src="./js/snow.js"></script>
+  </body>
+</html>

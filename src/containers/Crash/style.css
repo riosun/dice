@@ -1,0 +1,29 @@
+#crash-view{height: 400px;background-size: 1300px 1600px;background-position: right;background-repeat: no-repeat;position: relative;margin-top: 12px;padding-left: 45px;}
+#crash-game-notice{position: absolute;top:0px;width: 100%;height: 100%;text-align: center;left: 0px}
+#crash-game-notice #mutShow span{margin-top: 10%;display: inline-block;background: rgba(0,0,0,0.5);border-radius: 6px;padding: 0px 20px;height: 90px;font-size: 60px;line-height: 90px; color: #03F591}
+#crash-game-notice #waitTimeShow{font-size: 30px;color: #FFFFFF;margin-top: 10%;display: inline-block;text-shadow:0px 0px 20px #046F74;}
+
+#crash-opr{width: 100%;margin: 0px auto;background: #1D2222;height: 100%;border-radius: 8px;padding: 20px 15px;overflow: hidden;padding-bottom: 10px}
+#crash-opr .kk{width: 100%}
+#crash-opr .ly-switch{position: absolute;left: 0px}
+#latest-view{margin-top: 12px}
+
+#sdtp{position: absolute;top: 0px;width: 104%;left: -2%;top: -12px;height: 25px;}
+#crash-list{height: 600px;background: #1D2222;border-radius: 8px;padding: 10px;position: relative;}
+#crash-list-table{width: 100%;margin-top: 10px}
+#crash-list-table tr{height: 34px;font-size: 14px}
+#crash-list-table th{color: #5A5B5B;font-weight: 400;font-size: 14px;text-align: right;padding: 0px 8px;}
+#crash-list-table td{text-align: right;padding: 0px 8px;}
+#crash-list-table th:nth-child(1){text-align: left;}
+#crash-list-table td:nth-child(1){text-align: left;}
+
+#crash-list-table tr:nth-child(even){background: #252A2A;}
+.kk .disabled{background: #9997!important;color: #aaa!important}
+#betBtn{width: 100%;margin: 0px; margin-left: auto;display: block;position: relative;top:1px}
+#betBtnDiv{margin-top: 25px; padding-left: 100px}
+
+#moon-list{clear: both;padding: 20px 0px;min-height: 200px;background-size: cover;}
+#moon-list table th,#moon-list table td{text-align: center;height: 35px;}
+#moon-list table tr:nth-child(even){background: rgba(0,0,0,0.6)}
+#moon-list table tr td:nth-child(5){cursor: pointer;}
+

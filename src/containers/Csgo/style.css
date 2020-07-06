@@ -1,0 +1,175 @@
+#csgo-view{text-align: center;padding: 20px;position: relative;background-size: cover;overflow: hidden;}
+#csgo-rotate{max-width: 375px;max-height: 375px;margin: 0px auto;}
+#csgo-rotate img{width: 100%;height: 100%;}
+#csgo-text{position: absolute;width: 100%;height: 100%;top: 0px;left: 0px}
+
+#csgo-top-opr{text-align: center;margin-top: 10px;z-index: 960;position: relative;}
+#csgo-top-opr span{display: inline-block;background: #023127;padding: 5px 20px;color: #fff;cursor: pointer;}
+#csgo-top-opr span.active{background: #05B479}
+
+#csgo-jt{position: absolute;width: 100%;bottom: 30px;height: 30px;}
+.triangle_border_up{
+    width:0;
+    height:0;
+    border-width:0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent #fc0;/*透明 透明  灰*/
+    position: absolute;
+}
+#jt1{transform: rotate(65deg);}
+#jt2{transform: rotate(-65deg);}
+#csgo-djs{left:0px;bottom: 70px;font-size: 25px;position: absolute;width: 100%;text-align: center;color: inherit;}
+
+#csgo-history{position: absolute;top: 85px;right: 100px;width: 10%;z-index: 996;max-width: 200px}
+.csgo-history-item{padding: 0px;line-height: 10px;position:relative;margin-top: 6px;height: 3px;padding-left: 10px;border-radius: 3px;}
+#csgo-history .csgo-history-item > span{background: #666;height: 4px; width: 20px;margin: 0px;display: inline-block;border-radius: 13px;}
+#csgo-history .type-2x{color: #666;}
+#csgo-history .type-3x{color: #C13C3C;}
+#csgo-history .type-5x{color: #106ba6;}
+#csgo-history .type-50x{color: #FFC870;}
+
+#csgo-history .type-3x > span{background: #C13C3C;width: 25px}
+#csgo-history .type-5x > span{background: #106ba6;width: 30px}
+#csgo-history .type-50x > span{background: #FFC870;width: 35px}
+
+.csgo-history-item-detail{display: none;border-right: 5px solid #666;line-height: 1.3;background: rgba(0,0,0,0.5);position: absolute;width: 155px;left: -150px;top: -15px;word-wrap: break-word;padding: 10px;border-radius: 6px;font-size: 14px}
+#csgo-history .type-3x .csgo-history-item-detail{border-color:#C13C3C}
+#csgo-history .type-5x .csgo-history-item-detail{border-color:#106ba6}
+#csgo-history .type-50x .csgo-history-item-detail{border-color:#FFC870}
+.csgo-history-item-detail::before{content: "";background: #666;width: 6px;height: 6px;position: absolute;right: -8px;top: 20px;transform: rotate(45deg);}
+#csgo-history .type-3x .csgo-history-item-detail::before{background: #C13C3C}
+#csgo-history .type-5x .csgo-history-item-detail::before{background: #106ba6}
+#csgo-history .type-50x .csgo-history-item-detail::before{background: #FFC870}
+
+#csgo-opr{position: absolute;top:290px;left: 50px;padding: 0px 15px;}
+#csgo-opr .kk{width: 100%}
+#csgo-auto{padding: 10px 0px;position: relative;border-radius: 4px;}
+#csgo-auto > span{border-width: 3px;border-style: solid;display: inline-block;width: 20px;height: 20px;text-align: center;border-radius: 10px;margin-right: 5px;cursor: pointer;}
+#csgo-money-opr{font-size: 12px;margin: 0px; margin-top: 20px;}
+#csgo-money-opr span{text-align: center;width: 40px;display: inline-block;background:#1D1E20;border: 1px solid #020202; height: 20px;margin-left: 5px;line-height: 16px;cursor: pointer;font-weight: 400;border-radius: 3px}
+#csgo-input-money input{height: 35px;background: #242424;border: none;padding: 0 10px;border-radius: 5px;width: 100%;outline: none;margin: 0px}
+
+.s-1x{border-color: #019965}
+.s-1x.active{background: #019965}
+.s-2x{border-color: #666}
+.s-2x.active{background: #666}
+.s-3x{border-color: #C13C3C}
+.s-3x.active{background: #C13C3C}
+.s-5x{border-color: #278DCB}
+.s-5x.active{background: #278DCB}
+.s-50x{border-color: #FFC870;}
+.s-50x.active{background: #FFC870}
+
+#csgo-auto .ly-switch{position:relative!important;width: 50px!important;height: 23px!important;margin-left: 5px;top: 1px!important;user-select: none;}
+#csgo-auto .ly-switch p{width: 30px!important; height: 19px!important;line-height: 19px!important;font-size: 10px!important}
+#csgo-auto .ly-switch span{font-size: 10px!important;left: 53px!important;bottom: 4px!important}
+
+.csgo-btn{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    border: 2px solid;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 0 0;
+    padding: 2px 0;
+    cursor: pointer;
+    outline: none!important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.csgo-btn label{position: absolute;font-size: 12px;width: 100%;left: 0px;bottom: 0px;line-height: 12px;opacity: 0.9;text-align: right;padding-right: 10px}
+
+#csgo-btn-2x{border-color: #666;color: #666}
+#csgo-btn-2x:hover{background: #666;color: #222}
+
+#csgo-btn-3x{border-color: #C13C3C;color: #C13C3C}
+#csgo-btn-3x:hover{background: #C13C3C;color: #222}
+
+#csgo-btn-5x{border-color: #278DCB;color: #278DCB;}
+#csgo-btn-5x:hover{background: #278DCB;color: #222}
+
+#csgo-btn-50x{border-color: #FFB300;color: #FFB300}
+#csgo-btn-50x:hover{background: #FFB300;color: #222}
+
+.csgo-item-total{padding: 10px 0px;border-bottom: 1px solid;overflow:hidden;}
+.csgo-item-total .iconfont{font-size: 15px}
+.csgo-opr-list table{width: 100%}
+.csgo-opr-list table tr{height: 38px}
+.csgo-opr-list table td{padding: 0px 5px}
+.csgo-opr-list table tr:nth-child(even){background: rgba(0,0,0,0.2)}
+
+#dual{padding-left: 45px; min-height: 800px;margin-top: 20px;overflow: hidden;}
+#dual-create{width: 100px;height: 35px;border: none;border-radius: 5px;background: #2576A7;color: #fff;outline: none}
+#dual-history{width: 100px;height: 35px;border: none;border-radius: 5px;background: #05B479;color: #fff;outline: none}
+.dual-item{width: 260px; border: 1px solid #676767;height: 270px;border-radius: 6px;margin: 10px 3px 0px 10px;background: #001515;float: left;position: relative;padding: 30px 65px;}
+.dual-item .dual-item-money{position: absolute;top: 10px; left: 10px}
+.dual-item .dual-item-roomId{position: absolute;top: 10px; right: 10px;color: #666;}
+.dual-item-users{position: absolute;top: 190px;left: 0px;width: 100%}
+.dual-item-users p{width: 50%;display: inline-block;padding: 8px;font-size: 12px;margin: 0px}
+.dual-item-users p:nth-child(1), .dual-item-users p:nth-child(3){text-align: right;}
+.dual-item-users p:nth-child(1){color: #A03C3C; background-color: #A03C3C; border-top-right-radius:20px;border-bottom-right-radius:20px}
+.dual-item-users p:nth-child(2){color: #278DCB; background-color: #278DCB; border-top-left-radius:20px;border-bottom-left-radius:20px}
+.dual-item-users p:nth-child(3){color: #019965; background-color: #019965; border-top-right-radius:20px;border-bottom-right-radius:20px}
+.dual-item-users p:nth-child(4){color: #D4B852; background-color: #D4B852; border-top-left-radius:20px;border-bottom-left-radius:20px}
+.dual-item-users p:not(.win){background: none}
+.dual-item-users .win{color: #222!important; }
+.dual-item-users .me{border: 1px solid}
+.dual-item .winner-info{position: absolute;width: 100%;left: 0px;top: 65px;text-align: center;font-size: 13px;color: #A03C3C;line-height: 28px;font-weight: 800}
+
+.dual-svg g{transform-origin: 50% 50%;}
+.csgo-lock{opacity: 0.4}
+.csgo-lock button{cursor: not-allowed}
+
+.type-icon{display: inline-block;border: 1px solid #535152;color: #535152;width: 60px;text-align: center;height: 40px;line-height: 38px;margin-right: 10px;border-radius: 4px;cursor: pointer;}
+.type-icon.active{background: #535152;color: #26252B}
+
+#csgo-color-slect{margin-top: 30px;}
+#csgo-color-slect >span{border-width: 3px;border-style: solid;display: inline-block;width: 30px;height: 30px;text-align: center;border-radius: 30px;margin-right: 20px;cursor: pointer;}
+
+#csgo-money-slect{margin-top: 10px}
+#csgo-money-slect span{background: #242A2A;margin-right: 10px;width: 85px;display: inline-block;height: 35px;margin-top: 20px;text-align: center;line-height: 35px;border-radius: 5px;cursor: pointer;user-select: none;}
+#csgo-money-slect .active{background: #888888;color: #000}
+#dual-create{width: 100px;height: 35px;border: none;border-radius: 5px;background: #2576A7;color: #fff;outline: none}
+.solo-history{opacity: 0.3}
+.solo-history:hover{opacity: 0.5}
+
+.dual-join{position: absolute;width: 100%; height: 100%;background: rgba(0,0,0,1); left: 0px; top: 0px;text-align: center;padding: 10px;opacity: 0;cursor: pointer;  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;}
+.dual-join p{border: 2px solid red;width: 80%;margin: 10px auto;height: 35px;line-height: 30px; border-radius: 35px;-webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;}
+.dual-join:hover{opacity: 1;}
+.dual-join hr{border-color: #ccc}
+
+.dual-join p:nth-child(2).active{background: #A03C3C;color: #fff;opacity:0.3}
+.dual-join p:nth-child(3).active{background: #278DCB;color: #fff;opacity:0.3}
+.dual-join p:nth-child(4).active{background: #019965;color: #fff;opacity:0.3}
+.dual-join p:nth-child(5).active{background: #D4B852;color: #fff;opacity:0.3}
+
+.dual-join p:nth-child(2):hover{background: #A03C3C;color: #fff}
+.dual-join p:nth-child(3):hover{background: #278DCB;color: #fff}
+.dual-join p:nth-child(4):hover{background: #019965;color: #fff}
+.dual-join p:nth-child(5):hover{background: #D4B852;color: #fff}
+
+.dual-join p:nth-child(2){border-color: #A03C3C;color: #A03C3C}
+.dual-join p:nth-child(3){border-color: #278DCB;color: #278DCB}
+.dual-join p:nth-child(4){border-color: #019965;color: #019965}
+.dual-join p:nth-child(5){border-color: #D4B852;color: #D4B852}
+
+.dual-countDown{position: absolute;width: 100%;left: 0px;top: 65px;text-align: center;font-size: 14px;color: #BBBBBB;line-height: 28px;font-weight: bold;}

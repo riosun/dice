@@ -1,0 +1,8 @@
+.baseModal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.baseModal .modal-body {
+  padding-top: 0px;
+}

@@ -1,0 +1,122 @@
+#notice{background: #181818; height: 50px; color: #9f9f9f;text-align: center;line-height: 50px;cursor: pointer;overflow: hidden;}
+#notice:hover{color: #fff}
+#notice ul li {list-style: none;line-height: 50px;display: block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+
+#showNumBg{margin-top: 50px}
+#numView{background-size: cover;background-position: top; text-align: center;padding-bottom: 30px;position: relative;margin-top: 10px;height: 340px;}
+
+#number{position: absolute;width: 100%;top: 13px;text-align: center;font-size: 14px; color: #999}
+#number > span{display: inline-block;}
+
+#roll-control{position: absolute;width: 100%;top: 105px;font-size: 30px;cursor: pointer;}
+#roll-control span:hover{color: #fff;}
+#roll-control span.active{border-bottom: 2px solid #fff;color: #fff}
+
+#slider{width: 600px; margin: 0px auto; height: 50px; background: rgba(0,0,0,0.2); border-radius: 30px;padding: 20px;position: relative;margin-top: 35px;user-select: none;}
+#slider > #slider-bg{width: 500px;height: 10px;background: #FF006C;border-radius: 10px;margin: 0px auto; position: relative;}
+#slider-up{position: absolute; width:0px;height: 10px;overflow: hidden; top: 0px;left: 0px}
+#slider-now{width: 700px;height: 10px;background: #01F593;border-radius: 10px;margin: 0px auto;box-shadow: 2px 2px 20px #01F593}
+#slider-start, #slider-end{position: absolute;left: -16px;font-size: 18px;top: -8px;user-select: none;}
+#slider-end{right: -35px;left: auto;}
+#slider-c{width: 30px;height: 30px;position: absolute;background: #fff;border-radius: 2px;top:-8px;left: 50px;cursor: grabbing!important; box-shadow: 2px 2px 5px  #333}
+/* #slider-c{width: 36px;height: 33px;background-size: 100%;position: absolute;border-radius: 2px;top:-8px;left: 50px;cursor: grabbing!important;} */
+#slider-num{position: absolute;top: -36px;left: -7px;user-select: none;}
+#slider-num span{position: absolute;width: 100%; left: 0px;top: 3px;}
+#slider-num img{user-select: none}
+
+#control2{display: none;}
+#control{background: #181818;width: 100%; height: 200px;}
+#control-table{height: 80%;width:100%;margin-top: 20px}
+#control-table td{text-align: left;height: 50%}
+#playBtn{width: 300px;margin: 0px; margin-left: auto;display: block;position: relative;top:1px}
+.kk{position: relative; border: 1px solid #727677; border-radius: 4px; display: inline-block;font-size: 28px; width: 140px; height: 44px; line-height: 42px;text-align: center;color: #989B9B;margin-top: 15px}
+.kk label{position: absolute;top: -22px;font-size: 15px;line-height: 14px;left: 0px; display: block;width: 100%;user-select: none;}
+.kk label .label-btn{width: 40px;display: inline-block;background:#1D1E20;border: 1px solid #020202; height: 20px;margin-left: 5px;line-height: 16px;cursor: pointer;font-weight: 400;font-size: 15px}
+.kk-lg{width: 300px;text-align: center;position: relative;}
+.kk-lg #stayNum{position: absolute;right: 103px}
+.kk-lg img{position: absolute; left: 10px;top:8px}
+.kk-lg input{background: none;  color: #ddd; width: 100%; position: relative;height: 44px; left: 0px;top:-1px;font-family:  "roboto", sans-serif; text-align: center;border: none;outline: none; font-size: 28px}
+
+#listView{background-size: cover;background-position: center; background-repeat: no-repeat;text-align: center;padding-bottom: 30px;position: relative;min-height: 280px;}
+#list-menu{padding-top: 20px}
+#list-menu p{display: inline-block; font-size: 22px; color: #9f9f9f;height: 50px;line-height: 50px; width: 200px;cursor: pointer;}
+#list-menu p:hover{color: #fff}
+#list-menu .active{color: #fff}
+#listView > table{border: none; width: 100%;margin-top: 10px}
+#listView > table > tbody >tr{height: 36px}
+#listView > table >tr>th{color: #307DAB;text-align: center;}
+#listView > table >tbody> tr:nth-child(even){background: rgba(0,0,0,0.2)}
+.listView2 > table >tbody> tr:nth-child(odd){background: rgba(0,0,0,0)!important}
+/* .win>td:nth-child(4),  .win>td:nth-child(6){color: #01F593} */
+/* .win>td:nth-child(4),  .win>td:nth-child(6), .win>td:nth-child(5), .win>td:nth-child(3){color: #01F593} */
+/* .lose>td:nth-child(4), .lose>td:nth-child(6){color: #FF006C} */
+/* .lose>td:nth-child(4), .lose>td:nth-child(6),.lose>td:nth-child(5),.lose>td:nth-child(3){color: #FF006C} */
+
+#flyNum{position: absolute;left: 0px;color: #01F593; width: 100%;font-size: 16px}
+#pending{position: absolute; height: 20px;right: 10px;}
+.nomoney{padding-right: 20px;color: #bbb!important}
+
+.wenhao{color: #717171}
+.wenhao:hover{color: #aaa}
+
+#anteIcon:hover{width: 60px}
+
+#ante-jd{position: absolute;top: -1px;left: 32px;overflow: hidden;width: 100%;}
+#ante-jd-text{color: #7b7b7b; font-size: 22px;position: absolute;width: 100%;top: 7px}
+#ante-des{border: 1px solid #666;padding: 20px;margin: 10px;border-radius: 2px;padding-bottom: 10px}
+#ante-des table{width: 100%; font-size: 12px}
+#ante-des table th{height: 50px;text-align: center;}
+#ante-des table td{height: 35px;color: #818080}
+#ante-des table td a{height: 35px;color: #818080;text-decoration: underline;}
+#ante-des table tr:nth-child(even){background: #111111}
+.ante-label{position: absolute;width: 100%;left: 0px;top:-35px}
+
+#ante-jd2{width: 100%;height: 30px;background: #000;border: 3px solid #272626;border-radius: 15px;text-align: left;position: relative;}
+#ante-jd2 span{height: 100%;width: 100%;background: #46D76F;display: inline-block;border-radius: 15px;}
+#ante-jd2 p{height: 30px;position: absolute;top: 0px;width: 100%;text-align: center;color: #7b7b7b;line-height: 25px}
+
+#fh-table{width: 100%;margin-top: 20px}
+#fh-table th{text-align: center;height: 50px}
+ #fh-table td{text-align: center;height: 45px}
+#fh-table > tr:nth-child(even){background: rgba(0,0,0,0.2)}
+
+#autoBtn{height: 44px;border:none;border-radius: 2px;width: 100px;color: #888;position: relative;background: #aaa;outline: none}
+#autoBtn.active{background: #0AAF5B;color: #fff}
+
+#hdjb{position: absolute;top: 0px;z-index: 666}
+#sr-table{width: 100%}
+#sr-table th,#sr-table td{text-align: center;height: 50px;border-bottom: 1px solid #222;}
+#sr-table .me td{color: #0DAD5C}
+
+.rain-item{list-style: none;}
+.rain-item li{display: inline-block;border: 1px solid #555;margin: 10px;padding: 10px;width: 100px;border-radius: 2px;cursor: pointer;}
+.rain-item li.active{border: 1px solid #ccc;}
+
+.ante-input{float: left;width: 25%;margin: 10px 0px;position: relative;}
+.ante-input button{width: 120px;height: 29px; margin: 0px; line-height: 25px; font-size: 14px;background: #0AAF5B;margin-top: 10px;}
+.ante-input input{width:100%;text-align: center;background: #000;border: 1px solid #666;height: 44px;border-radius: 4px;outline: none}
+.ante-input img{width: 32px;top: 5px;left: 10px;position: absolute;}
+.ante-input #label-ante{position: absolute;right: 60px;bottom: 0px;}
+.ante-input #ante-total{position: absolute;right: 0px;width: 60px;top: 8px;right: 10px;margin-top: 0px;background: #888888}
+
+.ante-split{float: left;width: 12.5%;margin-top: 55px;text-align: center;}
+.ante-split img{width: 80%}
+.desabled{background: #888!important;color: #ccc!important}
+
+footer{background: #000;padding: 15px;font-size: 13px}
+
+#unFrozenInfo{border: 1px solid #666;margin-top: 20px;text-align: left;border-radius: 3px;padding-bottom: 10px}
+#unFrozenInfo > p{border-bottom: 1px solid #666;padding: 20px;font-size: 16px}
+#unFrozenInfo > div{padding: 10px 20px;font-size: 16px}
+#cancelUnfreeze{background: #008FB9;width: 120px;height: 29px; line-height: 25px; font-size: 14px;float: right;}
+
+#chiji{position: absolute;left: 5px;top:18px}
+#all-daily-list{height: 550px; width: 35%;vertical-align: top;font-size: 13px;padding: 0px 10px;background: #000;padding-top: 10px}
+#dice-view{width: 65%}
+#daily-ranking table tr td{height: 45px}
+
+.coinType{position: absolute;background: #0E0E0E;width: 100%;z-index: 888;cursor: pointer;right: 0px;top: 44px;border: 1px solid #727677;border-radius: 2px;user-select: none;outline: none}
+.coinType p{width: 100%;position: relative;text-align: center;height: 44px;line-height: 44px;margin: 0px;font-size: 28px;border-top: 1px solid #727677}
+.coinType p:first{border-top: none}
+.coinType p img{position: absolute; left: 10px;top:8px}
+.fa-caret-down{position: absolute;right: 10px;top: 6px}

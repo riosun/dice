@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 100px auto;
+        background-color: red;
+
+        /* 属性过渡(动画) */
+        transition: width 2s, background-color 1s; /* 2s表示动画持续时间,多个属性之间用","号隔开 */
+        transition: width 2s linear; /* 匀速变化(默认速度由快变慢) */
+        transition: width 2s linear 1s; /* 1s表示延迟变化 */
+        transition: all 2s; /* 所有属性都过渡,且效果一样 */
+
+        /* 过渡属性 */
+        transition-property: width; /*all:表示所有属性*/ /* 过渡属性,必须设置过渡时间才会生效 */
+        transition-duration: 5s; /* 过渡持续时间 */
+        transition-timing-function: ease-out; /* 动画变幻速度 ease:减速(默认)  linear:匀速  ease-in:加速 ease-out:减速  ease-in-out:先加速后减速 */
+        transition-delay: 1s; /* 动画延迟 */
+        transition: all 5s ease-in-out 0s; /* 常用的简写方式 */
+      }
+
+      .box:hover {
+        width: 600px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
